@@ -1,6 +1,8 @@
 const path = require('path')
 const express = require('express')
 const app = express()
+
+const port = process.env.PORT || 3000
 //app.get('', (req, res)=>{
    // res.send('<h1>Hi my name is dave</h1>')
 //})
@@ -32,6 +34,6 @@ app.use(express.static(filename3))
 //app.get('/about', (req, res) =>{
   //  res.send("about me")
 //})
-app.listen(3000, ()=>{
-  console.log('Program running now on port 3000')
+app.listen(port, ()=>{
+  console.log('Program running now on port 3000' + port)
 })
